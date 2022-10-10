@@ -4,14 +4,26 @@ public class AuthenticationResponse {
 	private String accessToken;
 	private String userName;
 	private String role;
+	private Long userId ;
 	
 	
 
-	public AuthenticationResponse(String accessToken, String userName, String role) {
+	public Long getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Long userId) {
+		this.userId = userId;
+	}
+
+	
+
+	public AuthenticationResponse(String accessToken, String userName, String role, Long userId) {
 		super();
 		this.accessToken = accessToken;
 		this.userName = userName;
 		this.role = role;
+		this.userId = userId;
 	}
 
 	public String getAccessToken() {
@@ -40,8 +52,11 @@ public class AuthenticationResponse {
 
 	@Override
 	public String toString() {
-		return "AuthenticationResponse [accessToken=" + accessToken + ", userName=" + userName + ", role=" + role + "]";
+		return "AuthenticationResponse [accessToken=" + accessToken + ", userName=" + userName + ", role=" + role
+				+ ", userId=" + userId + "]";
 	}
+
+	
 
 	
 }

@@ -48,7 +48,7 @@ public class AccountController {
 		 UserDetails userDetails = utilisateurService.loadUserByUsername(request.getUsername());
 		Utilisateur user = repository.findByUserName(request.getUsername());
 		final String jw = jwt.generateToken(userDetails);
-		AuthenticationResponse authenticationResponse = new AuthenticationResponse(jw , userDetails.getUsername() , user.getRoles().get(0).getNom());
+		AuthenticationResponse authenticationResponse = new AuthenticationResponse(jw , userDetails.getUsername() , user.getRoles().get(0).getNom(),user.getId());
 		System.out.println(request.getUsername());
 		System.out.println(authenticationResponse.getAccessToken());
 		return ResponseEntity.ok(authenticationResponse);

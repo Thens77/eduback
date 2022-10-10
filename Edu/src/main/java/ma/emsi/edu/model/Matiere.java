@@ -1,6 +1,10 @@
 package ma.emsi.edu.model;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -45,6 +49,8 @@ public class Matiere {
 	public String toString() {
 		return "Matiere [id=" + id + ", nom=" + nom + ", libelle=" + libelle + ", description=" + description + "]";
 	}
+	
+	
 	
 	
 }
