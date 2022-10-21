@@ -1,5 +1,6 @@
 package ma.emsi.edu.model;
 
+import java.sql.Time;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -13,24 +14,25 @@ public class Creneau {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id ;
-	private Date heureDebut ;
-	private Date heureFin ;
+	private Time heureDebut ;
+	
+	private Time heureFin ;
 	public long getId() {
 		return id;
 	}
 	public void setId(long id) {
 		this.id = id;
 	}
-	public Date getHeureDebut() {
+	public Time getHeureDebut() {
 		return heureDebut;
 	}
-	public void setHeureDebut(Date heureDebut) {
+	public void setHeureDebut(Time heureDebut) {
 		this.heureDebut = heureDebut;
 	}
-	public Date getHeureFin() {
+	public Time getHeureFin() {
 		return heureFin;
 	}
-	public void setHeureFin(Date heureFin) {
+	public void setHeureFin(Time heureFin) {
 		this.heureFin = heureFin;
 	}
 	@Override

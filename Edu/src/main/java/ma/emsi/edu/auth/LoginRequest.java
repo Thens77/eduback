@@ -1,7 +1,5 @@
 package ma.emsi.edu.auth;
 
-import lombok.Builder;
-import lombok.Data;
 
 
 public class LoginRequest {
