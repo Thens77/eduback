@@ -9,4 +9,6 @@ import ma.emsi.edu.model.Utilisateur;
 public interface UtilisateurRepository extends JpaRepository<Utilisateur  , Long>{
 	
 	Utilisateur findByUserName(String name);
+	
+	Utilisateur findByEmail(String email);
 }

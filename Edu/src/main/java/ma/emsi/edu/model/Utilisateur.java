@@ -73,6 +73,23 @@ public class Utilisateur  {
 	}
 	
 	
+	
+	
+	
+	public Utilisateur(String userName, String password, String nom, String prenom, int age, String email, String cin,
+			boolean isActive, boolean isNotLocked, List<Role> roles) {
+		super();
+		this.userName = userName;
+		this.password = password;
+		this.nom = nom;
+		this.prenom = prenom;
+		this.age = age;
+		this.email = email;
+		this.cin = cin;
+		this.isActive = isActive;
+		this.isNotLocked = isNotLocked;
+		this.roles = roles;
+	}
 	public Utilisateur(Long id, String userName, String password, String nom, String prenom, int age, String email,
 			String cin, boolean isActive, boolean isNotLocked, String[] autorities, List<Role> roles) {
 		super();
