@@ -22,13 +22,13 @@ import ma.emsi.edu.auth.LoginRequest;
 import ma.emsi.edu.model.Client;
 import ma.emsi.edu.model.Role;
 import ma.emsi.edu.model.Utilisateur;
+import ma.emsi.edu.register.MessageResponse;
+import ma.emsi.edu.register.SignupRequest;
 import ma.emsi.edu.repository.RoleRepository;
 import ma.emsi.edu.repository.UtilisateurRepository;
 import ma.emsi.edu.security.JWTUtils;
 import ma.emsi.edu.service.ClientService;
 import ma.emsi.edu.service.UtilisateurService;
-import register.MessageResponse;
-import register.SignupRequest;
 
 @RestController
 @RequestMapping("")

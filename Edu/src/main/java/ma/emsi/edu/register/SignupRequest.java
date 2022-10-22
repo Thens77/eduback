@@ -1,4 +1,4 @@
-package register;
+package ma.emsi.edu.register;
 
 import java.util.List;
 
